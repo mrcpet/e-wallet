@@ -29,7 +29,7 @@ function CardForm({ data }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     let maxAmount = maxAmountOfCards(cards);
-    if (maxAmount) {
+    if (maxAmount && !data) {
       setErrors({
         maxAmount: "Max amount of cards reached, remove one to add more!",
       });
