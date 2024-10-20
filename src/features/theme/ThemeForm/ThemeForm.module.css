@@ -1,0 +1,29 @@
+.themeForm {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.themeForm button {
+  width: 10rem;
+}
+
+.themeForm select {
+  width: 10rem;
+}
+
+.dropdown {
+  padding: 0.8rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--input-background-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}

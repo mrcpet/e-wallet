@@ -1,0 +1,21 @@
+.navigation {
+
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--background-color); 
+  
+  a {
+    border: 1px solid var(--text-color); 
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-color); 
+    background-color: var(--input-background-color); 
+    
+    &:hover {
+      background-color: var(--button-hover-background-color); 
+    }
+  }
+}

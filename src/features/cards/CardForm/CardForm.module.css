@@ -1,0 +1,66 @@
+.cardform {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--input-background-color);
+}
+
+.cardform div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.cardform label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.cardform input,
+.cardform select {
+  padding: 0.8rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--input-background-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardform input:focus,
+.cardform select:focus {
+  border-color: var(--button-hover-background-color);
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+.cardform button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.cardform button:disabled {
+  background-color: var(--button-disabled-color);
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: var(--error-message-color);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.successMessage {
+  color: var(--success-message-color);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}

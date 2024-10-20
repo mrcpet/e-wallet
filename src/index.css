@@ -1,0 +1,88 @@
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color); /* Use theme text color */
+  background-color: var(--background-color); /* Use theme background color */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color); /* Use theme link color */
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--link-hover-color); /* Use theme link hover color */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: "Orbitron", sans-serif;
+}
+h1 svg {
+  color: var(--accent-color);
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--accent-color);
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 1px solid var(--text-color);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(
+    --button-background-color
+  ); /* Use theme button background color */
+  color: var(--text-color); /* Use theme text color for button */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s; /* Add transition for background color */
+}
+button:hover {
+  border-color: var(--button-hover-color); /* Use theme button hover color */
+  background-color: var(
+    --button-hover-background-color
+  ); /* Optional: Change background color on hover */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-color-light); /* Use theme text color for light mode */
+    background-color: var(
+      --background-color-light
+    ); /* Use theme background color for light mode */
+  }
+  a:hover {
+    color: var(
+      --link-hover-color-light
+    ); /* Use theme link hover color for light mode */
+  }
+  button {
+    background-color: var(
+      --button-background-color-light
+    ); /* Use theme button background color for light mode */
+  }
+}

@@ -1,0 +1,97 @@
+.card {
+  border-radius: 1rem; 
+  padding: 1.5rem; 
+  margin: auto;
+  width: 300px; 
+  height: 160px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-family: "Roboto", sans-serif; 
+  box-shadow: 0 6px 18px var(--shadow-color); 
+  position: relative;
+  overflow: hidden; 
+  background-size: cover; 
+  transition: transform 0.3s ease; 
+}
+
+.card:hover::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgb(94, 237, 94);
+  background-color: rgba(0, 0, 0, 0.05); 
+  border-radius: 1rem; 
+  transition: background-color 0.3s ease; 
+  z-index: 1; 
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02); 
+  box-shadow: 0 12px 24px var(--shadow-color); 
+}
+
+.card span {
+  display: block;
+  letter-spacing: 1px;
+}
+
+.cardinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.visa {
+  background: linear-gradient(135deg, #2a77d0, #005cbf); 
+  border: none;
+}
+
+.mastercard {
+  background: linear-gradient(135deg, #ff4f00, #d93900); 
+  border: none;
+}
+
+.amex {
+  background: linear-gradient(135deg, #007a7e, #005f5f);
+  border: none;
+}
+
+.default {
+  background-color: var(--input-background-color); 
+  border: none;
+  color: var(--text-color); 
+}
+
+.cardNumber {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.cardHolder {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cardExpiry {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card .activeIndicator {
+  font-size: 0.85rem !important;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  color: rgba(99, 241, 92, 0.8); 
+}

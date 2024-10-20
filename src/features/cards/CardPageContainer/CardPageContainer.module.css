@@ -1,0 +1,13 @@
+.cardPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cardButtons {
+    display: flex;
+    gap: 1rem;
+    button {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+  }
+}
