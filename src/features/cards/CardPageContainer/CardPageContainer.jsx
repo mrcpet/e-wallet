@@ -33,7 +33,9 @@ function CardPageContainer({ card }) {
           <CardForm data={card} />
         </>
       )}
-      {!card && success && <p>Card was deleted!</p>}
+      {!card && success && (
+        <p className={styles.successMessage}>Card was deleted!</p>
+      )}
     </div>
   );
 }

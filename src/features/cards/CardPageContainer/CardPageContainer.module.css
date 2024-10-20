@@ -6,8 +6,12 @@
     display: flex;
     gap: 1rem;
     button {
-        width: 10rem;
-        margin-bottom: 1rem;
+      width: 10rem;
+      margin-bottom: 1rem;
     }
+  }
+  .successMessage {
+    color: var(--success-message-color);
+    font-weight: bold;
   }
 }
